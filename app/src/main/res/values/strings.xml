@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Marvel Heros</string>
+    <string name="marvel_copyright_notice">Data provided by Marvel. 2017</string>
 </resources>
