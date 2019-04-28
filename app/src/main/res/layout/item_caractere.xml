@@ -12,6 +12,7 @@
         android:layout_height="match_parent" />
     
     <TextView
+        android:id="@+id/textView"
         android:shadowColor="#111"
         android:shadowDx="5"
         android:shadowDy="5"
