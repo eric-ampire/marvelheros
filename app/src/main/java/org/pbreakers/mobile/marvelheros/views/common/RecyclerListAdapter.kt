@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-open class RecyclerListAdapter(val items: List<AnyItemAdapter>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+open class RecyclerListAdapter(val items: List<ItemAdapter<RecyclerView.ViewHolder>>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     final override fun onCreateViewHolder(parent: ViewGroup, layoutId: Int): RecyclerView.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -22,5 +22,3 @@ open class RecyclerListAdapter(val items: List<AnyItemAdapter>): RecyclerView.Ad
     }
 
 }
-
-typealias AnyItemAdapter = ItemAdapter<RecyclerView.ViewHolder>
